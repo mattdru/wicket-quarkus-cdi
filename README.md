@@ -35,5 +35,8 @@ protected void init() {
 
 ## Limitierungen
 
-Es ist nur möglich Injects in Components (Pages, Panels, ...) vorzunehmen. Weitere Features der Wicket CDI Integration müssten, sofern möglich, bei Bedarf vorgenommen werden.
+Es ist nur möglich Injects in Components (Pages, Panels, ...) vorzunehmen. 
+
+Weitere Features der Wicket CDI Integration müssten, sofern möglich, bei Bedarf implementiert werden.
+
 Qualifier sind nicht umgesetzt.
