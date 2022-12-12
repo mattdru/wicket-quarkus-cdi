@@ -1,0 +1,1 @@
+# wicket-quarkus-cdi
