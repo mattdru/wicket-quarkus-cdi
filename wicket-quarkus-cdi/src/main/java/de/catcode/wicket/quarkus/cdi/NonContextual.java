@@ -23,10 +23,10 @@ public class NonContextual<T> {
 	private NonContextual(final Class<? extends T> clazz) {
 		// mein InjectionTarget, ist die Klasse die reingegeben wird.
 		// Auf einen Cache der NonContextual Typen könnte man zurückgreifen. Ich probiers erstmal ohne. So minimalistisch wie möglich
-		final List<Field> injectableFiles = Arrays.stream(clazz.getDeclaredFields())
+		final List<Field> injectableFields = Arrays.stream(clazz.getDeclaredFields())
 			.filter(field -> field.isAnnotationPresent(Inject.class))
 			.toList();
-		injectionTarget = new WicketQuarkusInjectionTarget<>(injectableFiles);
+		injectionTarget = new WicketQuarkusInjectionTarget<>(injectableFields);
 	}
 
 	public void postConstruct(final T instance) {
